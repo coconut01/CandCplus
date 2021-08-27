@@ -1,0 +1,24 @@
+	设计题目：模拟改卷系统
+根据所给的数据文件，设计并实现一个模拟改卷系统。
+数据文件为文本文件格式，由若干行组成，每行表示一名学生的考试信息，格式为：序号 姓名  答案
+
+示例如下：
+1   赵光       CADADCDCDACCCDACCBCAAACCDBBCBDDBBAD
+2   罗志       CADBDCBCDADCABACBCCACACCAABCBDDBCAB
+3   闫谷凡     CDCBDCCCDBDBBBCCBBCACACBAABCBDDBCAB
+4   黄智博     CDCBDCCCDBDDABACBDCACACAAABCBDDBCCA
+5   汪昇朗     CACBDCBCDBDCBBACBDCACCCAAABCBDDBCAB
+6   刘奋伦     CDDBDCDCDBDAABBDDBCBCACAAABCBDDBCAB
+...
+
+	设计说明
+1.	试卷共35道单项选择题，每题答案为A，B，C，D四个选项之一，各题的分值为：第1~15题每道2分，第16~25题每题3分，第26~35题每题4分。总分100分。
+2.	根据学生的答题选项，统计出试卷的参考答案，即以每题中选项最多的那项为参考答案。
+3.	根据参考答案改卷，统计每名学生的考试成绩。
+
+	系统要求
+根据选择的数据文件，能执行以下操作：
+1.	输出参考答案，及各题参考答案选项的频次。
+2.	支持按姓名查询学生成绩。
+3.	能够按照指定需求进行排序，如按成绩的降序或升序对学生信息进行排序。
+4.	输出成绩单及试卷分析（分数段人数，计算最高分、最低分、平均分、及格率等）到外部文件。
