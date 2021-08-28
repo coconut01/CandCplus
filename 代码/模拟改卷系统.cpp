@@ -16,7 +16,7 @@ struct STU
 //定义全局变量
 STU stu[STU_NUM]; 
 int stu_num = 0;	//统计总人数
-int get_ans[TEST_NUM][4];	//二维数组存储每题四个选项出现的频次
+int get_ans[TEST_NUM][5];	//二维数组存储每题四个选项出现的频次，其中部分答案有误如X，所以有五种答案
 char get_answer[TEST_NUM];	//参考答案
 int MaxGrade, MinGrade;	//	最高分、最低分
 
@@ -54,7 +54,7 @@ void GetAswer()
 
 	for (int i = 0; i < TEST_NUM; i++) {
 		int max = 0, index = 0;
-		for (int j = 0; j < 4; j++)
+		for (int j = 0; j < 5; j++)
 			if( get_ans[i][j] > max ) {
 				max = get_ans[i][j];
 				index = j;
