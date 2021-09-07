@@ -103,9 +103,6 @@ void Sort()
 				temp = stu[j + 1];
 				stu[j + 1] = stu[j];
 				stu[j] =temp;
-				//memcpy(&temp, &(stu[j + 1]), sizeof(STU));
-				//memcpy(&(stu[j + 1]), &(stu[j]), sizeof(STU));
-				//memcpy(&(stu[j]), &temp, sizeof(STU));
 			}
 	MaxGrade = stu[0].grade;	//排序后第一个即为最高分
 	MinGrade = stu[stu_num - 1].grade;	//排序后最后一个即为最低分
