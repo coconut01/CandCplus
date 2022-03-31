@@ -1,2 +1,2 @@
-# CandCplus
-一些代码
+# C++
+some codes
